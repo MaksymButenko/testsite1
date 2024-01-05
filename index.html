@@ -2,7 +2,10 @@
 <body>
 7777777777777777777777777777777777
 <script>
-alert(navigator.cookieEnabled)
+alert(navigator.cookieEnabled);
+document.cookie = "test1=Hello; SameSite=None; Secure";
+document.cookie = "test2=Hello2;";
+alert(document.cookie);
 </script>
 </body>
 </html>
